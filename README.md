@@ -1,4 +1,4 @@
-# My First OS Kernel 🖥️
+# Novus-OS: My First OS Kernel 🖥️
 
 A custom operating system kernel built from scratch using C++ and Assembly. This project represents an intensive 3-week deep dive into low-level systems programming, x86 architecture, and hardware interaction.
 
