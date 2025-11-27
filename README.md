@@ -1,20 +1,49 @@
-# My Operating System
+# My First OS Kernel 🖥️
 
-Hi! Welcome to my very first OS, which took me 3 fulltime weeks. Today is Sunday, the day I've decided to embark in building this small project 3 weeks ago, and it is also the day I have accomplished the final module of my OS to put it on Git.
-## Special thanks
-I want to say thank you to: </br>
+A custom operating system kernel built from scratch using C++ and Assembly. This project represents an intensive 3-week deep dive into low-level systems programming, x86 architecture, and hardware interaction.
 
-[OSDev Community](https://wiki.osdev.org) __For great materials about OS and hardware components__ </br>
+## 📖 Project Overview
 
-[Little book about OS](https://littleosbook.github.io/) __For broading my horizon about OS booting process and how hardware components work in x86 architechture__  </br>
+Welcome to my first OS! I embarked on this project to demystify how computers work at the lowest level. Over the course of three full-time weeks (plus a week of preparation), I built a functioning kernel that can boot, manage interrupts, and handle keyboard input.
 
-[Viktor Engelmann](https://www.youtube.com/@writeyourownoperatingsystem) __For his amazing series about developing OS from scratch__ </br>
+While currently "unfinished" (lacking a full file system or advanced memory paging), this repository serves as a milestone of my learning journey—from a blank text editor to printing "Hello from Kernel" on the screen.
 
-[Nanobyte-dev](https://www.youtube.com/@nanobyte-dev) __For the help about setting up components and clean code__ </br>
+## ⚙️ Key Features
 
-And also [OSDev Forum](https://forum.osdev.org/), [StackOverFlow](https://stackoverflow.com), all blogs I have read, although they are quite old but really helpful for giving me a deeply understand and experiences through the period of 3 nerve-racking weeks.
+Based on the current implementation, the OS supports:
+* **Bootloader:** Custom assembly bootloader (Multiboot compliant).
+* **GDT (Global Descriptor Table):** Proper memory segmentation setup.
+* **IDT (Interrupt Descriptor Table):** Handling hardware and software interrupts.
+* **Drivers:**
+    * **Keyboard:** PS/2 keyboard driver for user input.
+    * **VGA Driver:** Text mode output and cursor handling.
+* **Emulation:** Configured to run on Bochs.
 
-## What I underwent
-Actually, if I take into account the preparation time for the virtual machine, environment, and hunting materials (since I was too new for this thing), it should be about a month.
+## 🛠️ Tech Stack
 
-However, the OS was still unfinished and really needed more time (maybe one more month in developing core things like Memory Management and File Distribution). But let's put it aside for a while, I want to save it on my own space, witnessing it as a series of days of failure with bugs and mistakes in designing systems, the excitement when pulled off the modules and Hello from Kernel line emerged after hopeless efforts. Enjoy my very first OS, I hope you like it.
+* **Languages:** C++, Assembly (x86)
+* **Build Tools:** Make, GCC, LD (Linker)
+* **Emulator:** Bochs (configured via `bochsrc.txt`)
+
+## 💭 The Journey & Retrospective
+
+> "It was a series of days of failure with bugs, mistakes in system design, and hopeless efforts... until the excitement when the modules finally pulled off and the 'Hello from Kernel' line emerged."
+
+Building this OS was a nerve-racking but incredibly rewarding experience.
+
+* **Timeline:** 3 weeks of full-time development (plus ~1 week of environment setup and research).
+* **Challenges:** The learning curve was steep. I wrestled with setting up the cross-compiler, understanding the booting process, and debugging triple faults.
+* **Future Scope:** While I am pausing development to preserve this state as a "monument" to my learning, future improvements would include Memory Management and a Virtual File System.
+
+## 🏆 Acknowledgements & Special Thanks
+
+This project would not have been possible without the incredible open-source community. A huge thank you to:
+
+* **OSDev Community:** For the "Bible" of OS development materials.
+* **[The Little Book about OS Development]:** For broadening my horizon on the booting process and x86 architecture.
+* **Viktor Engelmann:** For his amazing video series on developing an OS from scratch.
+* **Nanobyte-dev:** For guidance on setting up components and maintaining clean code.
+* **Community Forums:** OSDev Forum, StackOverflow, and various legacy blogs that provided deep understanding during debugging sessions.
+
+---
+*Created with ❤️ and a lot of caffeine.*
